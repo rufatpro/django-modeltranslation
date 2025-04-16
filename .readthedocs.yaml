@@ -1,13 +1,10 @@
 version: 2
 
 build:
-  image: latest
+  image: "latest"
+
+python:
+  version: "3.9"
 
 sphinx:
   configuration: docs/modeltranslation/conf.py
-
-python:
-  version: 3.8
-  install:
-    - method: pip
-      path: .
